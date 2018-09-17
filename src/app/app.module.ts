@@ -1,16 +1,32 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
+import { AppContainerComponent } from './containers/app-container/app-container.component';
+import { AppSidebarComponent } from './components/app-sidebar/app-sidebar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AppProjectsComponent } from './containers/app-projects/app-projects.component';
+import { AppProjectComponent } from './containers/app-project/app-project.component';
+import { ProjectsService } from './services/projects.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppContainerComponent,
+    AppProjectComponent,
+    AppProjectsComponent,
+    AppSidebarComponent
   ],
   imports: [
-    BrowserModule
+    AppRoutingModule,
+    BrowserModule,
+    HttpClientModule,
+    RouterModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    HttpClient,
+    ProjectsService
+  ],
+  bootstrap: [AppContainerComponent]
 })
 export class AppModule { }

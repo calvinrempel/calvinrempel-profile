@@ -1,0 +1,29 @@
+<div *ngIf="project$ | async" class="container-fluid">
+    <h1>{{ (project$ | async).title }}</h1>
+    <div class="project-container drop-shadow">
+        <div class="row">
+
+            <!-- LEFT COLUMN -->
+            <div class="col-md-8 content-column">
+                <img src="{{ (project$ | async).image }}">
+                <p>{{ (project$ | async).fullDescription }}</p>
+            </div>
+
+            <!-- Right COLUMN -->
+            <div class="col-md-4">
+                <a class="git-link drop-shadow" target="_blank" href="{{ (project$ | async).githubLink }}" title="View on Github">
+                    View Source on Github
+                </a>
+                <a class="demo-link drop-shadow" target="_blank" href="{{ (project$ | async).demoLink }}" title="View Demo">
+                    View Demo
+                </a>
+                <div class="tags">
+                    <span>Tags</span>
+                    <ul>
+                        <li *ngFor="let tag of (project$ | async).tags">{{tag}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

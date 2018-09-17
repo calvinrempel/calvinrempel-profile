@@ -1,0 +1,40 @@
+.project-container {
+    background: white;
+    border: 2px solid transparent;
+    padding: 1em;
+    margin-bottom: 1em;
+    transition: border-color 1s;
+}
+
+.project-container:hover {
+    border-color: #7ebc59;
+    cursor: pointer;
+}
+
+.project-container img {
+    width: 100%;
+}
+
+.drop-shadow {
+    box-shadow: 0px 2px 5px 0px #33363b;
+}
+
+.tags ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #33363b;
+}
+
+.tags ul li {
+    display: inline-block;
+    margin: 0.1em 0em 0.1em 0.3em;
+}
+
+.tags ul li::after {
+    content: '|';
+}
+
+.tags ul li:last-of-type::after {
+    content: '';
+}

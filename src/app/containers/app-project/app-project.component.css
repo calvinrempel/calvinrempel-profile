@@ -1,0 +1,75 @@
+.project-container {
+    background: white;
+    padding: 1em;
+}
+
+.drop-shadow {
+    box-shadow: 0px 2px 5px 0px #444;
+}
+
+.git-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #368cbf;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.git-link:hover {
+    color: #eaeaea;
+}
+
+.demo-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #7ebc59;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.demo-link:hover {
+    color: #eaeaea;
+}
+
+.tags {
+    margin: 2em 0 0;
+}
+
+.tags > span {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.tags ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tags ul li {
+    display: inline-block;
+    margin: 0.5em;
+    background: #eaeaea;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+.content-column {
+    border-right: 1px solid #eaeaea;
+}
+
+.content-column img {
+    width: 100%;
+}
+
+.content-column p {
+    text-indent: 1em;
+    font-size: 1.2em;
+}

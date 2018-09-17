@@ -1,0 +1,11 @@
+<div class="app-container container-fluid fill-height">
+    <div class="row fill-height">
+        <div class="sidebar fill-height col-lg-3 col-md-4 col-sm-6">
+            <app-sidebar [links]="links">
+            </app-sidebar>
+        </div>
+        <div class="content fill-height col-lg-9 col-md-8 col-sm-6">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

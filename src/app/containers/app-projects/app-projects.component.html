@@ -1,0 +1,30 @@
+<div *ngIf="projects$ | async" class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            <h1>Projects</h1>
+        </div>
+        <div class="col-md-10 text-right">
+
+        </div>
+    </div>
+    <div *ngFor="let project of (projects$ | async)" routerLink="{{getProjectLink(project)}}" class="row project-container drop-shadow">
+        <div class="row">
+
+            <div class="col-md-3">
+                <img src="{{project.thumbnail}}" title="{{project.title}}">
+                <div class="tags text-center">
+                    <ul>
+                        <li *ngFor="let tag of project.tags; let i = index;">
+                            {{tag}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <h2>{{project.title}}</h2>
+                <p>{{project.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>

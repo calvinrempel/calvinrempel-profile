@@ -1,0 +1,39 @@
+<div class="header container-fluid">
+    <!-- Logo -->
+    <div class="row">
+        <div class="col-md-12">
+            <a routerLink="/" title="Home">
+                <img class="logo" src="assets/calvin_rempel_logo.png">
+            </a>
+        </div>
+    </div>
+
+    <!-- Social Links -->
+    <div class="row social-container">
+        <div class="col-xs-6 text-center">
+            <a href="https://www.linkedin.com/in/calvinrempel" target="_blank" class="social-link" title="LinkedIn">
+                <i class="fa fa-linkedin-square"></i> LinkedIn
+            </a>
+        </div>
+        <div class="col-xs-6 text-center">
+            <a href="https://github.com/calvinrempel" target="_blank" class="social-link" title="Github">
+                <i class="fa fa-github-square"></i> Github
+            </a>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="row menu text-center">
+        <ul>
+            <li *ngFor="let link of links; let i = index;"  [style.animationDelay.s]="i">
+                <a [routerLink]="[link.path]" routerLinkActive="active" title="{{link.text}}">{{link.text}}</a>
+
+                <ul class="child-menu" *ngIf="link.children">
+                    <li *ngFor="let childLink of link.children; let j = index;" [style.animationDelay.s]="i + (j / 2)">
+                        <a [routerLink]="childLink.path" routerLinkActive="active" title="{{childLink.text}}">{{childLink.text}}</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

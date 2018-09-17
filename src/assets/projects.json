@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Profile",
+        "id": "profile",
+        "thumbnail": "/assets/thumbnails/profile.png",
+        "image": "/assets/images/profile.png",
+        "description": "This portfolio website! Developed with Angular to showcase my projects.",
+        "fullDescription": "This portfolio is written in Angular and is intended to showcase my various projects. The application is fairly simple with trivial routing and a responsive layout using the bootstrap grid. All non-grid styling and layout is custom and hand-written.",
+        "githubLink": "",
+        "demoLink": "",
+        "tags": [ "Angular", "TypeScript" ]
+    },
+    {
+        "title": "Quizzical",
+        "id": "quizzical",
+        "thumbnail": "/assets/thumbnails/quizzical.png",
+        "image": "/assets/images/quizzical.png",
+        "description": "A frontend Quiz application written as an exercise in Vue.",
+        "fullDescription": "Quizzical is a multiple choice quiz application written in a day as an exercise in Vue. All server interactions are mocked, and error handling has been largely ignored, since this was an exercise in the fundamentals of Vue and not in creating a fully-featured, robust application. For the demo, any username and password can be entered - there is form validation that requires password to be of a certain length. This demo utilizes vuelidate for form validation, vuex for state management, and the Vue router with navigation guards for SPA functionality.",
+        "githubLink": "https://github.com/calvinrempel/quizzical",
+        "demoLink": "",
+        "tags": [ "Vue", "JavaScript" ]
+    },
+    { 
+        "title": "Sudoku", 
+        "id": "sudoku",
+        "thumbnail": "/assets/projects/thumbnails/sudoku.png",
+        "image": "/assets/projects/images/quizzical.png",
+        "description": "A Sudoku generator, game, and solver. Written for fun with plain-old JavaScript.",
+        "fullDescription": "",
+        "githubLink": "",
+        "demoLink": "",
+        "tags": [ "JavaScript" ]
+    }
+]
